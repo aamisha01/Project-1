@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Job Application Form</title>
+        <style>
+            body{
+                background-color: grey;
+                margin-top: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .main-card{
+                background-color: white;
+                height: 536px;
+                width: 580px;
+                padding-left: 20px;
+                padding-top: 1px;
+                border-radius: 8px;
+            }
+            .first-name,
+            .email-name,
+            .city-name{
+                display: flex;
+            }
+            .sub-head{
+                font-size: 20px;
+            }
+            input{
+                padding: 8px;
+                border-radius: 2px;
+                border: 1px solid grey;
+                width: 250px;
+                height: 18px;
+                margin-right: 20px;
+            }
+            #Job-Selector{
+                padding: 8px;
+                border-radius: 2px;
+                border: 1px solid grey;
+                margin-right: 20px;
+                width: 268px;
+                height: 36px;
+            }
+            .address-box{
+                border: 1px solid grey;
+                border-radius: 2px;
+            }
+            p{
+                margin-bottom: 3px;
+            }
+            .apply-button{
+                color: white;
+                background-color: red;
+                border: none;
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                border-radius: 9px;
+            }
+            .apply-button-div{
+                display: flex;
+                justify-content: end;
+                margin-right: 25px;
+                margin-top: 18px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main-card">
+            <!-- heading -->
+            <div class="head">
+                <h1>Job Application <span class="sub-head">(Web)</span></h1>
+            </div>
+            
+
+            <!-- first and last name -->
+            <div class="first-name">
+                <div>
+                    <p>First Name</p>
+                    <input type="text" placeholder="Enter First Name...">
+                </div>
+    
+                <div>
+                    <p>Last Name</p>
+                    <input type="text" placeholder="Enter Last Name...">
+                </div>
+            </div>
+
+            <!-- email and job  -->
+            <div class="email-name">
+                <div>
+                    <p>Email</p>
+                    <input type="text" placeholder="Enter Email...">
+                </div>
+    
+                <div>
+                    <p>Job Role</p>
+                    <select id="Job-Selector">
+                        <option value="Job">Select Job Role</option>
+                    </select>
+                </div>
+            </div>
+           
+            <!-- address -->
+
+            <div>
+                <p>Address</p>
+                <textarea placeholder="Enter Address" class="address-box" cols="73" rows="3"></textarea>
+            </div>
+
+            <!-- city and pincode -->
+            <div class="city-name">
+                <div>
+                    <p>City</p>
+                    <input type="text" placeholder="Enter City Name...">
+                </div>
+    
+                <div>
+                    <p>Pincode</p>
+                    <input type="text" placeholder="Enter Pincode Name...">
+                </div>
+            </div>
+
+            <!-- date and upload CV -->
+            <div class="first-name">
+                <div>
+                    <p>Date</p>
+                    <input type="datetime-local">
+                </div>
+    
+                <div>
+                    <p>Upload Your CV</p>
+                    <input type="file" placeholder="Enter Last Name...">
+                </div>
+            </div>
+
+            <!-- apply Now button -->
+            <div class="apply-button-div">
+                <button class="apply-button">Apply Now</button>
+            </div>
+            
+        </div>
+    </body>
+</html>
